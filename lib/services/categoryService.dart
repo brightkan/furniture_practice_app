@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 
 // Fetch our Categories from the web service
 Future<List<Category>> fetchCategories() async {
-  const String apiUrl = "";
+  const String apiUrl = "https://60a9192d20a6410017306b5f.mockapi.io/api/v1/categories";
 
   final response = await http.get(apiUrl);
 
@@ -21,3 +21,4 @@ Future<List<Category>> fetchCategories() async {
     throw Exception("Failed to load");
   }
 }
+

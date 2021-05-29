@@ -1,7 +1,3 @@
-
-
-import 'package:flutter/material.dart';
-
 class Category {
   final String id,title,image;
   final int numOfProducts;
@@ -10,14 +6,14 @@ class Category {
 
   factory Category.fromJson(Map<String,dynamic> json){
     return Category(
-       id: json["id"],
-       title: json["title"],
-       image: json["image"],
-      numOfProducts: json["numOfProducts"]
+        id: json["id"],
+        title: json["title"],
+        image: json["image"],
+        numOfProducts: json["numOfProducts"]
     );
   }
+}
 
-  // Our demo Category
 
 Category category = Category(
   id: "1",
@@ -25,7 +21,3 @@ Category category = Category(
   image: "https://i.imgur.com/JqKDdxj.png",
   numOfProducts: 100,
 );
-
-
-
-}
